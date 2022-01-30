@@ -6,14 +6,11 @@ window.onload = function(){
     fetch("/api/news")
     .then(y => 
 
-        console.log(JSON.parse(x.text()))
-    // updateUI({
-    //     "weather":JSON.parse(x.text()),
-    //     "news": JSON.parse(y.text())
+    updateUI(x.text(),(y.text())
         
-    //     })
     )
     )
+)
 
 
 // updateUI({
@@ -24,8 +21,14 @@ window.onload = function(){
 }
 
 
-var updateUI = function(x){
+var updateUI = function(x, y){
 
+
+    var data = {
+        "weather":JSON.parse(x),
+        "news": JSON.parse(y)
+        
+        }
     console.log(x)
     document.getElementById("weathertext").innerText= x.weather.temp
 
