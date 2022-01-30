@@ -10,8 +10,45 @@ window.onload = function(){
     var data = {
         "weather": data.weather
     }
-    updateUI(data)
-    console.log(data.weather)
+
+
+
+
+
+
+    fetch('/api/news')
+    .then((response) => {
+      return response.json()
+    })
+    .then((data2) => {
+      // Work with JSON data here
+      var data = {
+          "weather": data.weather,
+          "news": data2.news
+      }
+      updateUI(data)
+      console.log(data2.news)
+    })
+    .catch((err2) => {
+      // Do something for an error here
+    })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   })
   .catch((err) => {
     // Do something for an error here
