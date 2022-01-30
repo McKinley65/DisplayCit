@@ -30,13 +30,16 @@
 
 <body>
 	<div class="container">
-		<div class="clock">
-			<div class="centercontainer" id="clock">
-				
-				<div>news</div>
-				<canvas id="canvas" style="background-color:transparent;"></canvas>
-				<div>Weather</div>
-			</div>
+		<div class="news" id="news"></div>
+		
+		<div class="clock" id="clock">
+			<canvas id="canvas" style="max-height:80%;"></canvas>
+		</div>
+		
+		<div class="weather" id="weather">
+			<div id="weathericon"></div>
+			
+			<div id="weathertext"></div>
 		</div>
 	</div>
 </body>
@@ -44,15 +47,15 @@
 <script>
 	var canvas = document.getElementById("canvas");
 	var ctx = canvas.getContext("2d");
-	canvas.width = screen.height;
-	canvas.height = screen.height;
-	document.getElementById("clock").style.top = screen.height / 4;
-	var radius = screen.height / 2;
-	ctx.translate(radius, radius);
-	radius = radius * 0.90
 	setInterval(drawClock, 1000);
 
 	function drawClock() {
+		canvas.width = window.innerWidth * 0.5;
+		canvas.height = window.innerWidth * 0.5;
+		document.getElementById("clock").style.top = "20%";
+		var radius = canvas.height / 2;
+		ctx.translate(radius, radius);
+		radius = radius * 0.90;
 		drawFace(ctx, radius);
 		drawNumbers(ctx, radius);
 		drawTime(ctx, radius);
