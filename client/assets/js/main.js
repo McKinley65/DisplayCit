@@ -64,9 +64,9 @@ var updateUI = function(x){
     //     // "news": y 
         
     //     }
-    document.getElementById("weathertext").innerText= x.weather.tempurature
+    document.getElementById("weathertext").innerText= x.weather.tempurature + "°F"
 
-    document.getElementById("news").innerText= x.news
+    document.getElementById("news").innerText= "News: " + x.news
 
 
 }
