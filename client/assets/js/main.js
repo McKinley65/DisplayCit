@@ -8,7 +8,7 @@ window.onload = function(){
 
     updateUI({
         "weather":JSON.parse(x.text()),
-        "news": "Making Money Online, the Hard Way"
+        "news": JSON.parse(y.text())
         
         })
     )
