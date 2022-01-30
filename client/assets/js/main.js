@@ -29,10 +29,10 @@ var updateUI = function(x, y){
         "news": JSON.parse(y)
         
         }
-    console.log(x)
-    document.getElementById("weathertext").innerText= x.weather.temp
+    console.log(data)
+    document.getElementById("weathertext").innerText= data.weather.temp
 
-    document.getElementById("news").innerText= x.news
+    document.getElementById("news").innerText= data.news
 
 
 }
