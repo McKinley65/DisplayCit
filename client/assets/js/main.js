@@ -1,9 +1,22 @@
 window.onload = function(){
 
+
+    fetch('/api/weather')
+  .then((response) => {
+    return response.json()
+  })
+  .then((data) => {
+    // Work with JSON data here
+    console.log(data)
+  })
+  .catch((err) => {
+    // Do something for an error here
+  })
+
  fetch("/api/weather")
 .then(x => 
     // x.text()
-    console.log(x.text())
+    console.log(x.JSON())
     // updateUI(x.text())
     // fetch("/api/news")
     // .then(y => 
