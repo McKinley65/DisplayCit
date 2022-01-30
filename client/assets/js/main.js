@@ -16,22 +16,21 @@ window.onload = function(){
 
 
 
-    fetch('/api/news')
-    .then((response) => {
-      return response.json()
-    })
-    .then((data2) => {
-      // Work with JSON data here
-      var data = {
-          "weather": data.weather,
-          "news": data2.news
-      }
-      updateUI(data)
-      console.log(data2.news)
-    })
-    .catch((err2) => {
-      // Do something for an error here
-    })
+fetch('/api/weather')
+  .then((response) => {
+    return response.json()
+  })
+  .then((data) => {
+    // Work with JSON data here
+    var data = {
+        "weather": data.weather
+    }
+    updateUI(data)
+    console.log(data.weather)
+  })
+  .catch((err) => {
+    // Do something for an error here
+  })
 
 
 
@@ -48,7 +47,8 @@ window.onload = function(){
 
 
 
-
+    updateUI(data)
+    console.log(data.weather)
   })
   .catch((err) => {
     // Do something for an error here
