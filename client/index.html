@@ -43,16 +43,17 @@
 
 <body>
 	<div class="container">
-		<div class="news" id="news"></div>
 		
 		<div class="clock" id="clock">
-			<canvas id="canvas" style="max-height:80%;"></canvas>
+			<canvas id="canvas"></canvas>
+		<div class="news" id="news">fjads jasdk flasjkf sadjflk asdfjasl dkfjladsk fjlkasd jf</div>
+
 		</div>
 		
 		<div class="weather" id="weather">
 			<div id="weathericon"></div>
 			
-			<div id="weathertext"></div>
+			<div id="weathertext">40.2</div>
 		</div>
 	</div>
 </body>
@@ -63,9 +64,9 @@
 	setInterval(drawClock, 1000);
 
 	function drawClock() {
-		canvas.width = window.innerWidth * 0.5;
-		canvas.height = window.innerWidth * 0.5;
-		document.getElementById("clock").style.top = "20%";
+		canvas.width = window.innerWidth * 0.3;
+		canvas.height = window.innerWidth * 0.3;
+		// document.getElementById("clock").style.top = "20%";
 		var radius = canvas.height / 2;
 		ctx.translate(radius, radius);
 		radius = radius * 0.90;

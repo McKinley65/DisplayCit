@@ -69,6 +69,11 @@ body {
 }
 
 #news {
-	position: absolute;
+	/* position: absolute; */
+	text-align: center;
 	bottom: 0;
+}
+
+#canvas{
+	/* max-height: 20%; */
 }
