@@ -53,7 +53,7 @@ var updateUI = function(x){
         
     //     }
     console.log(data)
-    document.getElementById("weathertext").innerText= x.weather.temp
+    document.getElementById("weathertext").innerText= x.weather.tempurature
 
     document.getElementById("news").innerText= x.news
 
