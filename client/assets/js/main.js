@@ -23,10 +23,12 @@ window.onload = function(){
 
 var updateUI = function(x, y){
 
+    X=JSON.parse(x)
+    y =JSON.parse(y)
 
     var data = {
-        "weather":JSON.parse(x),
-        "news": JSON.parse(y)
+        "weather": x,
+        "news": y 
         
         }
     console.log(data)
