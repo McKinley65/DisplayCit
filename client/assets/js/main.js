@@ -7,7 +7,7 @@ window.onload = function(){
 var intervalId = window.setInterval(function(){
     /// call your function here
     getStuff()
-  }, 5000);
+  }, 1 * 60 * 1000);
 
 var getStuff = function(){
     fetch('/api/weather')
