@@ -24,7 +24,7 @@ fetch('/api/weather')
     .then((data) => {
       // Work with JSON data here
       var data = {
-        "weather": datafirst,
+        "weather": datafirst.weather,
         "news": data.news
     }
 
