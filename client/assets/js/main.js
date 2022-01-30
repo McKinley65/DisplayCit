@@ -7,7 +7,7 @@ window.onload = function(){
   })
   .then((data) => {
     // Work with JSON data here
-    console.log(data)
+    console.log(data.weather)
   })
   .catch((err) => {
     // Do something for an error here
