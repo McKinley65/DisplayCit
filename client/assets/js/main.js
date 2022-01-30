@@ -43,6 +43,7 @@ window.onload = function(){
 var updateUI = function(x){
 
     console.log(x)
+    console.log(x.weather.tempurature)
 
     // X=JSON.parse(x)
     // y =JSON.parse(y)
@@ -52,7 +53,6 @@ var updateUI = function(x){
     //     // "news": y 
         
     //     }
-    console.log(data)
     document.getElementById("weathertext").innerText= x.weather.tempurature
 
     document.getElementById("news").innerText= x.news
