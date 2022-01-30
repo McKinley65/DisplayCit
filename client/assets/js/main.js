@@ -1,5 +1,9 @@
 window.onload = function(){
-fetch('/api/weather')
+    getStuff()
+}
+
+var getStuff = function(){
+    fetch('/api/weather')
   .then((response) => {
     return response.json()
   })
@@ -48,7 +52,6 @@ fetch('/api/weather')
   })
 
 }
-
 
 
 var updateUI = function(x){
