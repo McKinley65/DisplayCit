@@ -3,12 +3,13 @@ window.onload = function(){
  fetch("/api/weather")
 .then(x => 
     // x.text()
-    fetch("/api/news")
-    .then(y => 
-
     updateUI(x.text())
+    // fetch("/api/news")
+    // .then(y => 
+
         
-    )
+        
+    // )
     )
 
 
