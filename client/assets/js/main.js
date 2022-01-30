@@ -6,11 +6,12 @@ window.onload = function(){
     fetch("/api/news")
     .then(y => 
 
-    updateUI({
-        "weather":JSON.parse(x.text()),
-        "news": JSON.parse(y.text())
+        console.log(JSON.parse(x.text()))
+    // updateUI({
+    //     "weather":JSON.parse(x.text()),
+    //     "news": JSON.parse(y.text())
         
-        })
+    //     })
     )
     )
 
