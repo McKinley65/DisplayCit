@@ -25,6 +25,8 @@ updateUI({
 
 
 var updateUI = function(x){
+
+    console.log(x)
     document.getElementById("weathertext").innerText= x.weather.temp
 
     document.getElementById("news").innerText= x.news
