@@ -23,6 +23,8 @@ window.onload = function(){
 
 var updateUI = function(x, y){
 
+    console.log(x, y)
+
     X=JSON.parse(x)
     y =JSON.parse(y)
 
