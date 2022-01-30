@@ -7,6 +7,7 @@ let parser = new Parser();
 
 var API_KEY = '6d4345254a23efccfb861669c6f141cc';
 const newRSS = "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml"
+newRSS = "https://www.theverge.com/tech/rss/index.xml"
 let city = "greenville"
 
 
