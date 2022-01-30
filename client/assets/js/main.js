@@ -16,18 +16,18 @@ window.onload = function(){
     // Do something for an error here
   })
 
- fetch("/api/weather")
-.then(x => 
-    // x.text()
-    console.log(x.JSON())
-    // updateUI(x.text())
-    // fetch("/api/news")
-    // .then(y => 
+//  fetch("/api/weather")
+// .then(x => 
+//     // x.text()
+//     console.log(x.JSON())
+//     // updateUI(x.text())
+//     // fetch("/api/news")
+//     // .then(y => 
 
         
         
-    // )
-    )
+//     // )
+//     )
 
 
 
