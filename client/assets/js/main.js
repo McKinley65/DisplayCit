@@ -1,12 +1,24 @@
 window.onload = function(){
 
  fetch("/api/weather")
-.then(x => console.log())
+.then(x => 
+    // x.text()
+    fetch("/api/weather")
+    .then(y => 
+
+    js
+    updateUI({
+        "weather":JSON.parse(x.text()),
+        "news": "Making Money Online, the Hard Way"
+        
+        })
+    )
+    )
 
 
 updateUI({
 "weather":{temp: "50", describe:""},
-"news": "this is the newadlkfja asklf kajsdf lkasdjf laks"
+"news": "Making Money Online, the Hard Way"
 
 })
 }
