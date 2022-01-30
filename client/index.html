@@ -14,12 +14,25 @@
 	<!-- Base tag is not used since not all file share the same base URL -->
 
 	<!-- CSS Files -->
-	<link rel="stylesheet" href="/assets/css/fonts/fonts.css"><!-- Font declarations for offline use -->
-	<link rel="stylesheet" href="/assets/css/design.css"><!-- Normal CSS file -->
+	<link rel="stylesheet" href="assets/css/fonts/fonts.css"><!-- Font declarations for offline use -->
+	<link rel="stylesheet" href="assets/css/design.css"><!-- Normal CSS file -->
+	<style>
+		html { -ms-user-select:none; /* For Edge */  -webkit-user-select:none; /* For Safari and Chrome */  -moz-user-select:none; /* For Firefox */  -o-user-select:none; /* For Opera */  user-select:none; /* Standard */ }
+		body { width:100%; height:100%; magin:0 auto; padding:0; font-family:Roboto; cursor:default; overflow:hidden; }
+
+		.container {
+			display: flex;
+			width: 100%;
+			height: 100%;
+			justify-content: center;
+			align-items: center;
+			position: fixed;
+		}
+	</style>
 
 	<!-- JavaScript Files -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="/assets/js/main.js"></script>
+	<script src="assets/js/main.js"></script>
 	<!-- jQuery version 3.5.1 -->
 	<!-- <script src="assets/javascript/innerworkings.js"></script> -->
 
