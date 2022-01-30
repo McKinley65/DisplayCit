@@ -1,0 +1,31 @@
+/* Normal CSS file */
+
+/* Color Palette */
+	/* Red:
+		#
+		#
+	*/
+	/* Blue:
+		#
+		#
+		#
+	*/
+	/* Grayscale:
+		#FAF5E4
+		#DADADA
+		#393E46
+		#222831
+	*/
+	
+
+html { -ms-user-select:none; /* For Edge */  -webkit-user-select:none; /* For Safari and Chrome */  -moz-user-select:none; /* For Firefox */  -o-user-select:none; /* For Opera */  user-select:none; /* Standard */ }
+body { width:100%; height:100%; magin:0 auto; padding:0; cursor:default; overflow:hidden; }
+
+.centercontainer {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+}
