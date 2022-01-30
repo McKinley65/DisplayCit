@@ -8,9 +8,40 @@ fetch('/api/weather')
     var data = {
         "weather": data.weather
     }
-    updateUI(data)
     console.log(data.weather)
     console.log(data)
+    return(data)
+  }).then((data) => {
+      
+
+
+
+
+    fetch('/api/news')
+    .then((response) => {
+      return response.json()
+    })
+    .then((data) => {
+      // Work with JSON data here
+      var data = {
+        "weather": datafirst,
+        "news": data.news
+    }
+
+
+      console.log(data)
+    updateUI(data)
+
+    })
+    .catch((err) => {
+      // Do something for an error here
+    })
+
+
+
+
+
+
   })
   .catch((err) => {
     // Do something for an error here
