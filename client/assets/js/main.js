@@ -11,7 +11,7 @@ fetch('/api/weather')
     console.log(data.weather)
     console.log(data)
     return(data)
-  }).then((data) => {
+  }).then((datafirst) => {
       
 
 
@@ -29,7 +29,7 @@ fetch('/api/weather')
     }
 
 
-      console.log(data)
+    console.log(data)
     updateUI(data)
 
     })
