@@ -41,7 +41,7 @@ app.get('/weather', function (req, res) {
       res.json({
         "weather": {
           "tempurature": body.main.temp,
-          "description": body.weather[0].description
+          "description": "News: "+body.weather[0].description
         },
       });
       // sendData.weather = { "temp": body.main.temp, "description": body.weather[0].main }
