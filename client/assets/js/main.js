@@ -10,6 +10,7 @@ window.onload = function(){
     var data = {
         "weather": data.weather
     }
+    updateUI(data)
     console.log(data.weather)
   })
   .catch((err) => {
