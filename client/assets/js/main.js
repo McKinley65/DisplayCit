@@ -3,7 +3,7 @@ window.onload = function(){
  fetch("/api/weather")
 .then(x => 
     // x.text()
-    fetch("/api/weather")
+    fetch("/api/news")
     .then(y => 
 
     updateUI({
@@ -15,11 +15,11 @@ window.onload = function(){
     )
 
 
-updateUI({
-"weather":{temp: "50", describe:""},
-"news": "Making Money Online, the Hard Way"
+// updateUI({
+// "weather":{temp: "50", describe:""},
+// "news": "Making Money Online, the Hard Way"
 
-})
+// })
 }
 
 
