@@ -7,6 +7,9 @@ window.onload = function(){
   })
   .then((data) => {
     // Work with JSON data here
+    var data = {
+        "weather": data.weather
+    }
     console.log(data.weather)
   })
   .catch((err) => {
@@ -36,22 +39,22 @@ window.onload = function(){
 }
 
 
-var updateUI = function(x, y){
+var updateUI = function(x){
 
-    console.log(x, y)
+    console.log(x)
 
-    X=JSON.parse(x)
-    y =JSON.parse(y)
+    // X=JSON.parse(x)
+    // y =JSON.parse(y)
 
-    var data = {
-        "weather": x,
-        "news": y 
+    // var data = {
+    //     "weather": x,
+    //     // "news": y 
         
-        }
+    //     }
     console.log(data)
-    document.getElementById("weathertext").innerText= data.weather.temp
+    document.getElementById("weathertext").innerText= x.weather.temp
 
-    document.getElementById("news").innerText= data.news
+    document.getElementById("news").innerText= x.news
 
 
 }
