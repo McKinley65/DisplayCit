@@ -6,11 +6,11 @@ window.onload = function(){
     fetch("/api/news")
     .then(y => 
 
-    updateUI(x.text(),(y.text())
+    updateUI(x.text())
         
     )
     )
-)
+
 
 
 // updateUI({
